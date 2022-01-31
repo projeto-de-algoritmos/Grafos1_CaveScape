@@ -1,30 +1,18 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
 
-# NomedoProjeto
+# CaveScape
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 1
+**Conteúdo da Disciplina**: Grafos 1
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0164357  |  Ugor Brandão |
+| xx/xxxxxx  |  Eduarda Servídio |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Você está dentro de uma caverna e precisa escapar dela. Você tem acesso a um mapa onde mostra todos os postos dentro da caverna porém percebe que ele está desatualizado pois o mapa todos os postos estão conectados entre si. O seu objetivo é sair da caverna testando se existem caminhos ou não entre os postos.   
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
