@@ -9,7 +9,7 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 17/0164357  |  Ugor Brandão |
-| xx/xxxxxx  |  Eduarda Servídio |
+| 17/0161897 | Eduarda Servidio |
 
 ## Sobre 
 Você está dentro de uma caverna e precisa escapar dela. Você tem acesso a um mapa onde mostra todos os postos dentro da caverna porém percebe que ele está desatualizado pois o mapa todos os postos estão conectados entre si. O seu objetivo é sair da caverna testando se existem caminhos ou não entre os postos.   
