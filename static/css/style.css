@@ -1,0 +1,57 @@
+.img{
+    width: 500px;
+    height: 320px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 0px;
+    float: left;
+}
+.navbar{
+    background-color: #964B00;
+    box-shadow: 10px 10px 10px rgba(50, 50, 50, 0.50);
+    margin-top: 0px;
+    position:relative;
+}
+.title-logo{
+    width: 230px;
+    height: 90px;
+    display: flex;
+    margin: auto;
+}
+.impact-text{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    text-align: center;
+    color: #8B0000;
+    margin-bottom: 0px;
+}
+
+.text{
+    margin: 0px 100px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-envio{
+    float: left;
+    margin: 100px 100px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    background-color: red;
+    border: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: bisque;
+    margin:0px;
+    padding:0px;
+}
