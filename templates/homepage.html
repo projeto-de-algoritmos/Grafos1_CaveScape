@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CaveScape</title>
+</head>
+
+<body>
+
+    <h1>{{ variavel }}</h1>
+    <p>Você está dentro de uma caverna e precisa escapar dela. Você tem acesso a um mapa onde mostra todos os postos
+        dentro da caverna porém percebe que ele está desatualizado pois o mapa todos os postos estão conectados entre
+        si.
+        O seu objetivo é sair da caverna testando se existem caminhos ou não entre os postos.</p>
+
+    <form action="{{url_for('homepage')}}" method="post">
+        <label for=""> Numero: </label><br>
+        <input type="text" name="name" placeholder="Insira o nó de destino">
+        <button>Enviar</button>
+    </form>
+    <img src="./teste.jpg">
+
+
+
+</body>
+
+</html>
