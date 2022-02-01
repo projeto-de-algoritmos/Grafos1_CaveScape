@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>CaveScape</title>
+    <link rel="stylesheet" href="./static/css/style.css"
 </head>
 
 <body>
-
-    <h1>{{ variavel }}</h1>
-    <p>Você está dentro de uma caverna e precisa escapar dela. Você tem acesso a um mapa onde mostra todos os postos
-        dentro da caverna porém percebe que ele está desatualizado pois o mapa todos os postos estão conectados entre
-        si.
+    <div class="navbar">
+        <img class="title-logo" src="./static/img/logo_cave_scape.png">
+    </div>
+    <h1 class="impact-text"><b>VOCÊ ESTÁ DENTRO DE UMA CAVERNA E PRECISA ESCAPAR DELA!</b></h1>
+    <p class="text">Você tem acesso a um mapa onde mostra todos os postos dentro da caverna, porém percebe que ele está desatualizado!</br>
+        No mapa que você tem, todos os postos estão conectados entre si, e algumas conexões não existem mais.</br>
         O seu objetivo é sair da caverna testando se existem caminhos ou não entre os postos.</p>
 
-    <form action="{{url_for('homepage')}}" method="post">
-        <label for=""> Numero: </label><br>
-        <input type="text" name="name" placeholder="Insira o nó de destino">
+    <img class="img" src="./static/img/caveScapemap.png">
+
+    <form class="text-envio" action="{{url_for('homepage')}}" method="post">
+        <label for=""> Número: </label><br>
+        <input type="text" name="name" placeholder="Insira o nó de destino.">
         <button>Enviar</button>
     </form>
-    <img src="./teste.jpg">
-
 
 
 </body>
