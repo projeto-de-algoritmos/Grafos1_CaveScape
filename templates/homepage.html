@@ -11,7 +11,7 @@
     <div class="navbar">
         <img class="title-logo" src="./static/img/logo_cave_scape.png">
     </div>
-    <div class="box-body">
+    <li class="box-body">
         <h1 class="impact-text"><b>VOCÊ ESTÁ DENTRO DE UMA CAVERNA E PRECISA ESCAPAR DELA!</b></h1>
         <p class="text">Você tem acesso a um mapa onde mostra todos os postos dentro da caverna, porém percebe que ele
             está
@@ -21,12 +21,12 @@
 
         <img class="img" src="./static/img/caveScapemap.png">
 
-        <form class="text-envio" action="{{url_for('homepage')}}" method="post">
-            <label for=""> Onde deseja ir? </label><br>
-            <input type="number" min="1" max="10" name="name" placeholder="Insira o posto de destino.">
-            <button>Enviar</button>
+        <form class="text-envio" action="http://127.0.0.1:5000/" method="post">
+            <label for=""> Você está em {{no}} Onde deseja ir? </label><br>
+            <input type="number" min="1" max="10" name="name" placeholder="Insira o posto de destino." required>
+            <button type="submit">Enviar</button>
         </form>
-    </div>
+    </li>
 
 </body>
 

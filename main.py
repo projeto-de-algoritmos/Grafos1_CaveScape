@@ -1,8 +1,21 @@
+from flask import Flask, render_template, request, flash, redirect, url_for
 
-from flask import Flask, render_template, request
+adj_list = {
+    "1": ["2", "7", "8"],
+    "2": ["7", "1", "8"],
+    "3": ["7"],
+    "4": ["6", "8"],
+    "5": ["5", "10"],
+    "6": ["4", "5"],
+    "7": ["1", "3", "4"],
+    "8": ["1", "4", "9"],
+    "9": ["8"],
+    "10": ["5"],
 
+}
 
 app = Flask(__name__)  # sempre ao iniciar um site
+
 
 # criar a primeira página do site
 # route -> caminho que vem depois do dominio
@@ -11,21 +24,41 @@ app = Flask(__name__)  # sempre ao iniciar um site
 # template
 
 
-@app.route('/', methods=["GET", "POST"])
-def homepage():
-    if request.method == "GET":
+global arquive
+arquive = "1"
 
-        return render_template("homepage.html")
+
+@app.route('/', methods=['GET', 'POST'])
+def homepage():
+    no = "1"
+    if request.method == "GET":
+        return render_template("homepage.html", no=no)
 
     else:
 
-        no = 0
-        palpite = int(request.form.get("name"))
+        palpite = str(request.form.get("name"))
 
-        if no == palpite:
-            return '<h1>Você Ganhou!!!<h1>'
+        if (palpite in adj_list[no]):
+            no = palpite
+            return redirect(url_for('caminho', no_destino=no))
         else:
-            return '<h1>Você Perdeu!!!<h1>'
+            return "<h1>Errou Gata<h1>"
+
+
+@app.route('/caminho/<no_destino>', methods=['GET', 'POST'])
+def caminho(no_destino):
+    no = no_destino
+    if request.method == "GET":
+        return render_template("caminho.html", no=no)
+
+    else:
+        palpite = str(request.form.get("name"))
+
+        if (palpite in adj_list[no]):
+            no = palpite
+            return redirect(url_for('caminho', no_destino=no))
+        else:
+            return "<h1>Errou Gata<h1>"
 
 
 # colocar o site no ar
