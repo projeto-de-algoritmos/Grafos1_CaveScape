@@ -13,13 +13,15 @@ app = Flask(__name__)  # sempre ao iniciar um site
 
 @app.route('/', methods=["GET", "POST"])
 def homepage():
-    variavel = "Game: Cave Scape"
     if request.method == "GET":
 
-        return render_template("homepage.html", variavel=variavel)
+        return render_template("homepage.html")
+
     else:
+
         no = 0
         palpite = int(request.form.get("name"))
+
         if no == palpite:
             return '<h1>Você Ganhou!!!<h1>'
         else:
