@@ -59,9 +59,11 @@
 }
 form {
     height: 150px;
+    margin-bottom: 0px;
 }
 button {
     margin-top:5px;
+    margin-bottom:0px;
 	width: 100px;
 	height: 30px;
 	cursor: pointer;
@@ -181,4 +183,47 @@ body {
 	100% {
 		transform: rotate(1turn);
 	}
+}
+.victory{
+    margin-top:20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.img-victory {
+    width: 70%;
+    margin: auto;
+    margin-top: 0px;
+    display: block;
+}
+.error{
+    margin-top:20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.img-error {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+.text-warning{
+    color:white;
+    margin: 0px 100px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.caminho{
+    margin-top:20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
 }
