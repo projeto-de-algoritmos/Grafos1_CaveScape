@@ -16,10 +16,16 @@ Você está dentro de uma caverna e precisa escapar dela! Você tem acesso a um 
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/52542729/152828799-4331f393-4844-427b-b8d2-a9ac5e86f17f.png)
-![image](https://user-images.githubusercontent.com/52542729/152828897-3e5b8100-7fd7-4b01-8303-e2df8e3e13e4.png)
-![image](https://user-images.githubusercontent.com/52542729/152828973-291a6a34-b4f1-4ab0-8ed4-f441491685a1.png)
-![image](https://user-images.githubusercontent.com/52542729/152829049-8edab551-e090-46b2-a39b-daf529c63a82.png)
+Figura 1: Tela inicial.
 
+![image](https://user-images.githubusercontent.com/52542729/152828897-3e5b8100-7fd7-4b01-8303-e2df8e3e13e4.png)
+Figura 2: Tela de quando há caminho entre os postos.
+
+![image](https://user-images.githubusercontent.com/52542729/152828973-291a6a34-b4f1-4ab0-8ed4-f441491685a1.png)
+Figura 3: Tela de quando não há caminho entre os postos. Mensagem de Erro.
+
+![image](https://user-images.githubusercontent.com/52542729/152829049-8edab551-e090-46b2-a39b-daf529c63a82.png)
+Figura 4: Tela de quando encontra a saída. Mensagem de Vitória.
 
 ## Instalação 
 **Linguagem**: Python, HTML e CSS. <br>
