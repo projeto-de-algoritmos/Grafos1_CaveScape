@@ -1,3 +1,4 @@
+from cgitb import html
 from flask import Flask, render_template, request, flash, redirect, url_for
 
 adj_list = {
@@ -24,10 +25,6 @@ app = Flask(__name__)  # sempre ao iniciar um site
 # template
 
 
-global arquive
-arquive = "1"
-
-
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
     no = "1"
@@ -42,23 +39,35 @@ def homepage():
             no = palpite
             return redirect(url_for('caminho', no_destino=no))
         else:
-            return "<h1>Errou Gata<h1>"
+            return redirect(url_for('errou'))
 
 
 @app.route('/caminho/<no_destino>', methods=['GET', 'POST'])
 def caminho(no_destino):
     no = no_destino
+
     if request.method == "GET":
         return render_template("caminho.html", no=no)
 
     else:
         palpite = str(request.form.get("name"))
-
+        if (palpite == "10" and palpite in adj_list[no]):
+            return redirect(url_for('vitoria'))
         if (palpite in adj_list[no]):
             no = palpite
             return redirect(url_for('caminho', no_destino=no))
         else:
-            return "<h1>Errou Gata<h1>"
+            return redirect(url_for('errou'))
+
+
+@app.route('/errou', methods=['GET', 'POST'])
+def errou():
+    return render_template("errou.html")
+
+
+@app.route('/vitoria', methods=['GET', 'POST'])
+def vitoria():
+    return render_template("vitoria.html")
 
 
 # colocar o site no ar
