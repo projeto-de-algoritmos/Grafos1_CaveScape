@@ -11,23 +11,36 @@
 | 17/0164357  |  Ugor Brandão |
 | 17/0161897 | Eduarda Servidio |
 
-## Sobre 
-Você está dentro de uma caverna e precisa escapar dela. Você tem acesso a um mapa onde mostra todos os postos dentro da caverna porém percebe que ele está desatualizado pois o mapa todos os postos estão conectados entre si. O seu objetivo é sair da caverna testando se existem caminhos ou não entre os postos.   
+## Sobre  
+Você está dentro de uma caverna e precisa escapar dela! Você tem acesso a um mapa onde mostra todos os postos dentro da caverna, porém percebe que ele está desatualizado! No mapa que você tem, todos os postos estão conectados entre si, e algumas conexões não existem mais. O seu objetivo é sair da caverna testando se existem caminhos ou não entre os postos.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![image](https://user-images.githubusercontent.com/52542729/152828799-4331f393-4844-427b-b8d2-a9ac5e86f17f.png)
+![image](https://user-images.githubusercontent.com/52542729/152828897-3e5b8100-7fd7-4b01-8303-e2df8e3e13e4.png)
+![image](https://user-images.githubusercontent.com/52542729/152828973-291a6a34-b4f1-4ab0-8ed4-f441491685a1.png)
+![image](https://user-images.githubusercontent.com/52542729/152829049-8edab551-e090-46b2-a39b-daf529c63a82.png)
+
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Python, HTML e CSS. <br>
+**Pré-requisitos**: ter o Python e o Flask instalados na máquina, abrir e executar os arquivos de preferência no VSCode.
+Ao executar o arquivo no VSCode, um localhost será criado, dando acesso ao jogo.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Os caminhos que existem entre os postos (nós) são os seguintes:
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+| Posto | Acesso a |
+| -- | -- |
+| 1  | 2,7,8 |
+| 2  | 7,1,8 |
+| 3  | 7 |
+| 4  | 6,8 |
+| 5  | 5,10 |
+| 6  | 4,5 |
+| 7  | 1,3,4 |
+| 8  | 1,4,9 |
+| 9  | 8 |
+| 10  | 5 |
 
-
-
-
+Ao chegar no posto 10, uma mensagem de "Você encontrou a saída" aparecerá. <br> 
+Ao tentar acessar um posto que não tem caminho, uma mensagem de "Voce errou" irá surgir, onde o jogador deve voltar a página inicial e tentar encontrar a saída novamente.
